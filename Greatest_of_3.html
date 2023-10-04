@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest of 3</title>
+    <script>
+        function greatest()
+        {
+            var a,b,c;
+            a=parseInt(document.getElementById("a").value);
+            b=parseInt(document.getElementById("b").value);
+            c=parseInt(document.getElementById("c").value);
+            if(a>b && a>c){
+                window.alert(+a+ " is greater")
+            }
+            else if(b>a && b>c){
+                window.alert(+b+ " is greater")
+            }
+            else{
+                window.alert(+c+ " is greater")
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter first number : <input type="text" id="a"><br><br>
+    Enter second number : <input type="text" id="b"><br><br>
+    Enter third number : <input type="text" id="c"><br><br>
+    <button onclick="greatest()">Check</button>
+</body>
+</html>
